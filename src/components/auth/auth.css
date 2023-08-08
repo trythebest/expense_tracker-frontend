@@ -1,0 +1,31 @@
+/* 
+.container{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+   background-color: aqua;
+   padding:30px;
+   border-radius: 10px;
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+} 
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+} */

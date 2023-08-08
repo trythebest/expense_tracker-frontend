@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Login from "./components/auth/login";
+import Signup from "./components/auth/signup";
+import Home from "./components/Home/home";
+import { useState } from "react";
+import AddTransaction from "./components/Home/add";
+import History from "./components/Home/history";
+import "./App.css";
 
-function App() {
+
+export default function App() {
+  const [data, setData] = useState([]);
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      
+      <Home data={data} />
+      <History data={data} />
+      <AddTransaction data={data} setData={setData} />
+      </div>
+    
 
-export default App;
+  )
+}
